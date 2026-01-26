@@ -1,11 +1,11 @@
 import logging
-from fastapi import FASTAPI
+from fastapi import FastAPI
 import inngest
-import inngest.fastapi  
+import inngest.fast_api  
 from inngest.experimental import ai 
 from dotenv import load_dotenv
 import uuid 
 import os 
-import datatime
+import datetime
 
 load_dotenv()
