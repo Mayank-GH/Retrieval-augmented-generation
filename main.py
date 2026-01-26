@@ -1,6 +1,11 @@
-def main():
-    print("Hello from rag-inngest!")
+import logging
+from fastapi import FASTAPI
+import inngest
+import inngest.fastapi  
+from inngest.experimental import ai 
+from dotenv import load_dotenv
+import uuid 
+import os 
+import datatime
 
-
-if __name__ == "__main__":
-    main()
+load_dotenv()
