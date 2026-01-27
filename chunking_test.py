@@ -4,9 +4,6 @@ import re
 
 
 def load_text_file(file_path: str) -> str:
-    """
-    Load a text file and return its content as a single string.
-    """
     path = Path(file_path)
 
     if not path.exists():
@@ -16,21 +13,11 @@ def load_text_file(file_path: str) -> str:
 
 
 def clean_text(text: str) -> str:
-    """
-    Clean text by removing extra whitespace and normalizing formatting.
-    """
     text = text.replace("\t", " ")
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
-def chunk_text(
-    text: str,
-    chunk_size: int = 500,
-    overlap: int = 100
-) -> List[str]:
-    """
-    Split text into overlapping chunks.
-    """
+def chunk_text(text: str,chunk_size: int = 500,overlap: int = 100) -> List[str]:
     chunks = []
     start = 0
 
