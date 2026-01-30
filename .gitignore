@@ -9,3 +9,5 @@ venv/
 # Python cache
 __pycache__/
 *.pyc
+
+pdf-test.pdf
