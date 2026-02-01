@@ -24,9 +24,9 @@ inngest_client = inngest.Inngest(
     trigger=inngest.TriggerEvent(event="rag/inngest_pdf")
 )
 async def rag_ingest_pdf():
-    return {"hello"}
+    return {"hello","world"}
 
 app = FastAPI()
 
 
-inngest.fast_api.serve(app,inngest_client,functions =[rag_ingest_pdf],)
+inngest.fast_api.serve(app,inngest_client,functions=[rag_ingest_pdf],)
